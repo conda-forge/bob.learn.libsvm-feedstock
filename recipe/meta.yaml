@@ -10,7 +10,7 @@ source:
   url: https://pypi.io/packages/source/b/bob.learn.libsvm/bob.learn.libsvm-{{ version }}.zip
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - bob.core
     - bob.io.base
     - libsvm 3.21|3.21.*
-    - boost 1.61.*
+    - boost 1.63.*
     - cmake
     - pkg-config
 
@@ -34,7 +34,7 @@ requirements:
     - bob.core
     - bob.io.base
     - libsvm 3.21|3.21.*
-    - boost 1.61.*
+    - boost 1.63.*
 
 test:
   commands:
@@ -50,7 +50,7 @@ test:
 
 about:
   home: https://www.idiap.ch/software/bob/
-  license: Modified BSD License (3-clause)
+  license: BSD 3-Clause
   summary: Bob's Python bindings to LIBSVM
 
 extra:
